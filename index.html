@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antilla Tower | Luxury Flats in Sector 107, Noida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary: #1a3e72;
+            --secondary: #d4af37;
+            --accent: #800020;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --white: #ffffff;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* ========== HEADER & NAVIGATION ========== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--accent);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            background-color: rgba(128, 0, 32, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            background: linear-gradient(to right, var(--white), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .logo p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 3px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 25px;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            font-weight: 500;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover:after,
+        .nav-links a.active:after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .cta-button {
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: var(--white);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--white);
+            margin: 5px;
+            transition: var(--transition);
+        }
+        
+        /* ========== HERO SECTION ========== */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("ai.png") no-repeat center center/cover;
+            color: var(--white);
+            margin-top: 60px;
+        }
+        
+        .hero-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .hero-text {
+            flex: 1;
+            min-width: 50%;
+            padding: 0 30px;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-text p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-form-container {
+            flex: 1;
+            min-width: 45%;
+            padding: 0 40px;
+        }
+        
+        .hero-form {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            color: var(--dark);
+            border: 2px solid var(--secondary);
+            backdrop-filter: blur(5px);
+            max-width: 90%;
+            box-sizing: border-box;
+        }
+        
+        .hero-form h2 {
+            color: var(--primary);
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .hero-form h2:after {
+            left: 0;
+            transform: none;
+            width: 60px;
+            height: 3px;
+            bottom: -8px;
+        }
+        
+        .form-group {
+            margin-bottom: 14px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 500;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            transition: var(--transition);
+            background: var(--white);
+            font-size: 0.95rem;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(26, 62, 114, 0.2);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+        
+        /* ========== ABOUT SECTION ========== */
+        .about {
+            background-color: var(--white);
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+        }
+        
+        /* ========== FLOATS SECTION ========== */
+        .flats {
+            background-color: var(--light);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            background: var(--white);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .filter-btn.active {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+        
+        .flats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .flat-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .flat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .flat-img {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .flat-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .flat-card:hover .flat-img img {
+            transform: scale(1.05);
+        }
+        
+        .flat-info {
+            padding: 25px;
+        }
+        
+        .flat-info h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .flat-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .spec-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        
+        .spec-item i {
+            color: var(--secondary);
+            margin-right: 5px;
+        }
+        
+        /* ========== AMENITIES SECTION ========== */
+        .amenities {
+            background-color: var(--white);
+        }
+        
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .amenity-card {
+            background: var(--light);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .amenity-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .amenity-img {
+            height: 200px;
+        }
+        
+        .amenity-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .amenity-content {
+            padding: 20px;
+        }
+        
+        .amenity-content h3 {
+            color: var(--primary);
+        }
+        
+        /* ========== PARKING SECTION ========== */
+        .parking {
+            background-color: var(--light);
+        }
+        
+        .parking-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .parking-img {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .parking-img img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .parking-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-item i {
+            color: var(--secondary);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* ========== SPECIFICATIONS SECTION ========== */
+        .specifications {
+            background-color: var(--white);
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .spec-card {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .spec-card h3 {
+            color: var(--primary);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            margin-bottom: 15px;
+        }
+        
+        .spec-card ul {
+            list-style-position: inside;
+        }
+        
+        .spec-card li {
+            margin-bottom: 8px;
+        }
+        
+        /* ========== LOCATION SECTION ========== */
+        .location {
+            background-color: var(--light);
+        }
+        
+        .location-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .location-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .nearby-places {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .place-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .place-item i {
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+        
+        /* ========== CONTACT SECTION ========== */
+        .contact {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover;
+            color: var(--white);
+            position: relative;
+        }
+        
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+        
+        .contact .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact h2 {
+            color: var(--white);
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            color: var(--white);
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-item i {
+            color: var(--secondary);
+            margin-right: 15px;
+            font-size: 1.2rem;
+            width: 20px;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .contact-form label {
+            color: var(--white);
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--secondary);
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* ========== FOOTER ========== */
+        footer {
+            background-color: var(--accent);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-col h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--secondary);
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
+        }
+        
+        .footer-col a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* ========== BACK TO TOP BUTTON ========== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--secondary);
+            color: var(--primary);
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 99;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .back-to-top:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-5px);
+        }
+        
+        /* ========== MODAL ========== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal {
+            background: var(--white);
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            transform: scale(0.9);
+            transition: var(--transition);
+        }
+        
+        .modal-overlay.active .modal {
+            transform: scale(1);
+        }
+        
+        .modal-header {
+            background: var(--accent);
+            color: var(--white);
+            padding: 20px;
+            position: relative;
+        }
+        
+        .modal-header h3 {
+            margin: 0;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .close-modal:hover {
+            color: var(--secondary);
+            transform: rotate(90deg);
+        }
+        
+        .modal-body {
+            padding: 25px;
+        }
+        
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media screen and (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                width: 70%;
+                max-width: 300px;
+                background: var(--accent);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                clip-path: circle(0px at 90% -10%);
+                -webkit-clip-path: circle(0px at 90% -10%);
+                transition: all 0.7s ease-out;
+                pointer-events: none;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+                opacity: 0;
+                transform: translateX(30px);
+                transition: all 0.4s ease;
+            }
+            
+            .nav-links a {
+                font-size: 1.2rem;
+                padding: 10px 20px;
+            }
+            
+            .nav-links.active {
+                clip-path: circle(1000px at 90% -10%);
+                -webkit-clip-path: circle(1000px at 90% -10%);
+                pointer-events: all;
+            }
+            
+            .nav-links.active li {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            
+            .burger {
+                display: block;
+            }
+            
+            .burger.toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            
+            .burger.toggle .line2 {
+                opacity: 0;
+            }
+            
+            .burger.toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+            
+            .hero-content {
+                flex-direction: column;
+                padding: 60px 0;
+            }
+            
+            .hero-text,
+            .hero-form-container {
+                min-width: 100%;
+                padding: 0 20px;
+            }
+            
+            .hero-text {
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-text p {
+                margin: 0 auto 30px;
+            }
+            
+            .hero-form h2 {
+                text-align: center;
+            }
+            
+            .hero-form h2:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .flats-grid,
+            .amenities-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+        }
+        
+        @media screen and (max-width: 576px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .filter-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-btn {
+                width: 100%;
+                max-width: 200px;
+            }
+            
+            .flats-grid,
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .parking-content,
+            .location-content,
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+        
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: fadeInUp 1s ease forwards;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>ANTILLA TOWER</h1>
+                    <p>SECTOR 107, NOIDA</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#flats">Flats</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#parking">Parking</a></li>
+                    <li><a href="#specifications">Specifications</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact" class="cta-button">Contact US</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate">
+                    <h1>LUXURY LIVING REDEFINED</h1>
+                    <p>Experience unparalleled comfort and sophistication in our premium residential towers at Sector 107, Noida - where every detail is crafted for your perfect lifestyle.</p>
+                    <a href="#flats" class="btn">Explore Flats</a>
+                </div>
+                <div class="hero-form-container animate delay-1">
+                    <div class="hero-form">
+                        <h2>Schedule a Visit</h2>
+                        <form id="visitForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">Interested In</label>
+                                <select id="interest" required>
+                                    <option value="">Select Option</option>
+                                    <option value="3bhk">3BHK Flat</option>
+                                    <option value="4bhk">4BHK Flat</option>
+                                    <option value="both">Both Options</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-block">Request Callback</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="animate">About Antilla Tower</h2>
+            <div class="about-content">
+                <p class="animate delay-1">Antilla Tower is a premium residential development located in the heart of Sector 107, Noida. We pride ourselves on delivering exceptional quality and luxurious living spaces that cater to modern lifestyles.</p>
+                <p class="animate delay-2">With over 15 years of experience in the real estate industry, our team of professionals is committed to creating homes that combine aesthetic appeal with functional design, ensuring complete satisfaction for our residents.</p>
+                <p class="animate delay-3">Our vision is to redefine urban living by providing world-class amenities, superior construction quality, and a vibrant community atmosphere in one of Noida's most sought-after locations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flats Section -->
+    <section class="flats" id="flats">
+        <div class="container">
+            <h2 class="animate">Our Luxury Flats</h2>
+            <div class="filter-buttons animate delay-1">
+                <button class="filter-btn active" data-filter="all">All Flats</button>
+                <button class="filter-btn" data-filter="3bhk">3BHK</button>
+                <button class="filter-btn" data-filter="4bhk">4BHK</button>
+                <button class="filter-btn" data-filter="alpha">Alpha Block</button>
+                <button class="filter-btn" data-filter="beta">Beta Block</button>
+            </div>
+            <div class="flats-grid">
+                <div class="flat-card animate delay-2" data-type="4bhk alpha">
+                    <div class="flat-img">
+                        <img src="alpha.png" alt="Alpha Block 4BHK">
+                    </div>
+                    <div class="flat-info">
+                        <h3>ALPHA-201 | 4BHK - 1850 Sq.ft</h3>
+                        <div class="flat-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-bed"></i>
+                                <span>4 Bedrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bath"></i>
+                                <span>3 Bathrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-vector-square"></i>
+                                <span>1850 Sq.ft</span>
+                            </div>
+                        </div>
+                        <p>Spacious living area with modern design and premium finishes, perfect for large families.</p>
+                        <button class="btn btn-view-details" data-flat="alpha-201">View Details</button>
+                    </div>
+                </div>
+                
+                <div class="flat-card animate delay-3" data-type="4bhk beta">
+                    <div class="flat-img">
+                        <img src="beta.png" alt="Beta Block 4BHK">
+                    </div>
+                    <div class="flat-info">
+                        <h3>BETA-201 | 4BHK - 1950 Sq.ft</h3>
+                        <div class="flat-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-bed"></i>
+                                <span>4 Bedrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bath"></i>
+                                <span>3 Bathrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-vector-square"></i>
+                                <span>1950 Sq.ft</span>
+                            </div>
+                        </div>
+                        <p>Luxurious design with large bedrooms and stunning views of the city skyline.</p>
+                        <button class="btn btn-view-details" data-flat="beta-201">View Details</button>
+                    </div>
+                </div>
+                
+                <div class="flat-card animate delay-2" data-type="3bhk alpha">
+                    <div class="flat-img">
+                        <img src="alpha 205.png" alt="Alpha Block 3BHK">
+                    </div>
+                    <div class="flat-info">
+                        <h3>ALPHA-205 | 3BHK - 1425 Sq.ft</h3>
+                        <div class="flat-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Bedrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bath"></i>
+                                <span>2 Bathrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-vector-square"></i>
+                                <span>1425 Sq.ft</span>
+                            </div>
+                        </div>
+                        <p>Efficient layout with modern amenities and comfortable spaces for small families.</p>
+                        <button class="btn btn-view-details" data-flat="alpha-205">View Details</button>
+                    </div>
+                </div>
+                
+                <div class="flat-card animate delay-3" data-type="3bhk beta">
+                    <div class="flat-img">
+                        <img src="beta205.png" alt="Beta Block 3BHK">
+                    </div>
+                    <div class="flat-info">
+                        <h3>BETA-205 | 3BHK - 1550 Sq.ft</h3>
+                        <div class="flat-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Bedrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bath"></i>
+                                <span>2 Bathrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-vector-square"></i>
+                                <span>1550 Sq.ft</span>
+                            </div>
+                        </div>
+                        <p>Contemporary design with ample natural light and premium finishes throughout.</p>
+                        <button class="btn btn-view-details" data-flat="beta-205">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities" id="amenities">
+        <div class="container">
+            <h2 class="animate">World-Class Amenities</h2>
+            <div class="amenities-grid">
+                <div class="amenity-card animate delay-1">
+                    <div class="amenity-img">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Gym">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>State-of-the-Art Gym</h3>
+                        <p>Fully equipped fitness center with modern cardio and strength training equipment, personal trainers available.</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card animate delay-2">
+                    <div class="amenity-img">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Running Track">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Rooftop Running Track</h3>
+                        <p>200-meter synthetic running track with panoramic city views, open 24/7 for residents.</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card animate delay-3">
+                    <div class="amenity-img">
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Rooftop Garden">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Rooftop Mini Garden</h3>
+                        <p>Serene green space with flowering plants, sitting areas, and beautiful sunset views.</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card animate delay-1">
+                    <div class="amenity-img">
+                        <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Lounge">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Residents' Lounge</h3>
+                        <p>Elegant common area with comfortable seating, perfect for socializing or relaxing.</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card animate delay-2">
+                    <div class="amenity-img">
+                        <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Play Area">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Kids' Play Zone</h3>
+                        <p>Safe and fun play area for children with slides, swings, and interactive games.</p>
+                    </div>
+                </div>
+                
+                <div class="amenity-card animate delay-3">
+                    <div class="amenity-img">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Club House">
+                    </div>
+                    <div class="amenity-content">
+                        <h3>Club House</h3>
+                        <p>Exclusive club facility with party hall, indoor games, and community events space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parking Section -->
+    <section class="parking" id="parking">
+        <div class="container">
+            <h2 class="animate">Parking Facilities</h2>
+            <div class="parking-content">
+                <div class="parking-img animate delay-1">
+                    <img src="parking.png" alt="Secure Parking">
+                </div>
+                <div class="parking-info animate delay-2">
+                    <h3>Secure & Convenient Parking</h3>
+                    <p>Antilla Tower offers state-of-the-art parking facilities designed to provide maximum convenience and security for your vehicles. Our underground parking area is well-lit, ventilated, and monitored 24/7 by CCTV cameras.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-car"></i>
+                            <span>Dedicated parking for each flat</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>24/7 Security Surveillance</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>EV Charging Stations</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-wheelchair"></i>
+                            <span>Accessible Parking Spaces</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Two-Wheeler Parking Area</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-fire-extinguisher"></i>
+                            <span>Fire Safety Compliant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specifications" id="specifications">
+        <div class="container">
+            <h2 class="animate">Premium Specifications</h2>
+            <div class="specs-grid">
+                <div class="spec-card animate delay-1">
+                    <h3>Living/Dining Area</h3>
+                    <ul>
+                        <li>Vitrified Tiles Flooring</li>
+                        <li>Premium UPVC Sliding Doors</li>
+                        <li>Double Glazed Soundproof Windows</li>
+                        <li>Asian Royal Premium Paints</li>
+                        <li>Pre-installed AC Fittings</li>
+                        <li>False Ceiling with LED Lighting</li>
+                    </ul>
+                </div>
+                
+                <div class="spec-card animate delay-2">
+                    <h3>Bedrooms</h3>
+                    <ul>
+                        <li>Wooden Flooring</li>
+                        <li>Built-in Wardrobes</li>
+                        <li>Premium Paints & Wallpaper</li>
+                        <li>False Ceiling with Lighting</li>
+                        <li>Balcony with Glass Railings</li>
+                        <li>Pre-installed AC Fittings</li>
+                    </ul>
+                </div>
+                
+                <div class="spec-card animate delay-3">
+                    <h3>Kitchen</h3>
+                    <ul>
+                        <li>Modular Kitchen with Granite Counter</li>
+                        <li>Premium HOB & Chimney</li>
+                        <li>Ceramic Tile Backsplash</li>
+                        <li>Stainless Steel Sink</li>
+                        <li>RO Water Purifier Provision</li>
+                        <li>Ample Storage Cabinets</li>
+                    </ul>
+                </div>
+                
+                <div class="spec-card animate delay-1">
+                    <h3>Bathrooms</h3>
+                    <ul>
+                        <li>Premium Sanitary Ware (Hindware)</li>
+                        <li>Anti-skid Ceramic Tiles</li>
+                        <li>Geyser Provision in All Bathrooms</li>
+                        <li>Chrome Plated Fittings</li>
+                        <li>Ventilation with Exhaust Fan</li>
+                        <li>Premium Mirror & Storage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <h2 class="animate">Prime Location</h2>
+            <div class="location-content">
+                <div class="map-container animate delay-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.223522038037!2d77.32701131507973!3d28.50288898246761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce6a5d9a5a6a5%3A0x9a5a6a5d9a5a6a5!2sSector%20107%2C%20Noida%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="location-info animate delay-2">
+                    <h3>Sector 107, Noida</h3>
+                    <p>Located at the most premium & posh location in Central Noida, Antilla Tower is soon to be the hub of Noida's new infrastructural development. It already enjoys great connectivity which is further going to be enhanced with upcoming metro lines and expressways.</p>
+                    
+                    <h4>Key Nearby Facilities:</h4>
+                    <div class="nearby-places">
+                        <div class="place-item">
+                            <i class="fas fa-school"></i>
+                            <span>Maharishi Vidya Mandir School</span>
+                        </div>
+                        <div class="place-item">
+                            <i class="fas fa-hospital"></i>
+                            <span>Yatharth Super Speciality Hospital</span>
+                        </div>
+                        <div class="place-item">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Sector 104 Market</span>
+                        </div>
+                        <div class="place-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Spezia Bistro & Fine Dining</span>
+                        </div>
+                        <div class="place-item">
+                            <i class="fas fa-store"></i>
+                            <span>Greater Value Sharanam Mall</span>
+                        </div>
+                        <div class="place-item">
+                            <i class="fas fa-subway"></i>
+                            <span>Upcoming Metro Station (500m)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="animate">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info animate delay-1">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Opposite Greater Value Sharanam, Ashram Road, Salarpur Sector-107, Noida</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8178031962</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@antillatower.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 10:00 AM - 7:00 PM</span>
+                        </div>
+                    </div>
+                    
+                    <h3>Why Choose Antilla Tower</h3>
+                    <ul>
+                        <li>Prime location with excellent connectivity</li>
+                        <li>Luxurious amenities and premium finishes</li>
+                        <li>Secure gated community with 24/7 security</li>
+                        <li>Competitive pricing with flexible payment plans</li>
+                        <li>Reputed builder with 15+ years of experience</li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form animate delay-2">
+                    <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 10px; border: 2px solid var(--secondary); backdrop-filter: blur(5px);">
+                        <h3>Enquire Now</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="contactName">Name</label>
+                                <input type="text" id="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Phone</label>
+                                <input type="tel" id="contactPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Message</label>
+                                <textarea id="contactMessage" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>About Antilla</h3>
+                    <p>Premium residential project in Sector 107, Noida offering luxurious 3BHK and 4BHK flats with world-class amenities and unmatched quality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Project</a></li>
+                        <li><a href="#flats">Floor Plans</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Sector 107, Noida, UP</li>
+                        <li><i class="fas fa-phone"></i> +91 8178031962</li>
+                        <li><i class="fas fa-envelope"></i> sales@antillatower.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 10AM - 7PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Antilla Tower. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #ff6b6b;"></i> by Antilla Developers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Flat Details Modal -->
+    <div class="modal-overlay" id="flatModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modalTitle">Flat Details</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ========== MOBILE NAVIGATION ==========
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+        
+        burger.addEventListener('click', () => {
+            // Toggle nav
+            nav.classList.toggle('active');
+            burger.classList.toggle('toggle');
+            
+            // Animate links
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+        });
+        
+        // Close mobile menu when clicking a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    nav.classList.remove('active');
+                    burger.classList.remove('toggle');
+                    navLinks.forEach(link => {
+                        link.style.animation = '';
+                    });
+                }
+            });
+        });
+        
+        // ========== HEADER SCROLL EFFECT ==========
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // ========== SMOOTH SCROLLING ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ========== ACTIVE LINK HIGHLIGHTING ==========
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('.nav-links a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === `#${current}`) {
+                    item.classList.add('active');
+                }
+            });
+        });
+        
+        // ========== FILTER FLATS ==========
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const flatCards = document.querySelectorAll('.flat-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                // Filter flats
+                flatCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-type').includes(filterValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // ========== FLAT DETAILS MODAL ==========
+        const flatModal = document.getElementById('flatModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+        const closeModal = document.querySelector('.close-modal');
+        const viewButtons = document.querySelectorAll('.btn-view-details');
+        
+        // Flat details data
+        const flatsData = {
+            'alpha-201': {
+                title: 'ALPHA-201 | 4BHK - 1850 Sq.ft',
+                image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+                price: '₹2.75 Crore',
+                specs: [
+                    'Super Area: 1850 Sq.ft',
+                    '4 Bedrooms with Master Suite',
+                    '3 Bathrooms (2 Attached)',
+                    'Living + Dining Area',
+                    'Kitchen with Utility',
+                    '2 Balconies',
+                    'Parking: 2 Covered'
+                ],
+                description: 'This spacious 4BHK flat in Alpha Block offers premium finishes and abundant natural light. The master bedroom features a walk-in closet and luxurious attached bathroom. Perfect for large families looking for comfort and style.'
+            },
+            'beta-201': {
+                title: 'BETA-201 | 4BHK - 1950 Sq.ft',
+                image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+                price: '₹2.95 Crore',
+                specs: [
+                    'Super Area: 1950 Sq.ft',
+                    '4 Bedrooms with Master Suite',
+                    '3 Bathrooms (2 Attached)',
+                    'Living + Dining Area',
+                    'Kitchen with Utility',
+                    '3 Balconies',
+                    'Parking: 2 Covered'
+                ],
+                description: 'The Beta Block 4BHK offers panoramic city views from its higher floors. Features include a spacious living area, modern kitchen with breakfast counter, and premium flooring throughout. Ideal for those who appreciate luxury living.'
+            },
+            'alpha-205': {
+                title: 'ALPHA-205 | 3BHK - 1425 Sq.ft',
+                image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+                price: '₹2.15 Crore',
+                specs: [
+                    'Super Area: 1425 Sq.ft',
+                    '3 Bedrooms (1 Master)',
+                    '2 Bathrooms (1 Attached)',
+                    'Living + Dining Area',
+                    'Kitchen with Utility',
+                    '1 Balcony',
+                    'Parking: 1 Covered'
+                ],
+                description: 'This well-designed 3BHK in Alpha Block offers efficient use of space with premium finishes. The compact layout is perfect for small families or professionals looking for a comfortable home in a prime location.'
+            },
+            'beta-205': {
+                title: 'BETA-205 | 3BHK - 1550 Sq.ft',
+                image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+                price: '₹2.35 Crore',
+                specs: [
+                    'Super Area: 1550 Sq.ft',
+                    '3 Bedrooms (1 Master)',
+                    '2 Bathrooms (1 Attached)',
+                    'Living + Dining Area',
+                    'Kitchen with Utility',
+                    '2 Balconies',
+                    'Parking: 1 Covered'
+                ],
+                description: 'The Beta Block 3BHK offers slightly more space than its Alpha counterpart, with an additional balcony and premium fixtures. The open layout creates a sense of spaciousness while maintaining functionality.'
+            }
+        };
+        
+        // Open modal with flat details
+        viewButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const flatId = button.getAttribute('data-flat');
+                const flat = flatsData[flatId];
+                
+                modalTitle.textContent = flat.title;
+                
+                modalContent.innerHTML = `
+                    <div class="modal-flat-img" style="margin-bottom: 20px;">
+                        <img src="${flat.image}" alt="${flat.title}" style="width: 100%; border-radius: 8px;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <h4 style="color: var(--primary); margin-bottom: 10px;">Price: ${flat.price}</h4>
+                        <p>${flat.description}</p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: var(--primary); margin-bottom: 10px;">Specifications:</h4>
+                        <ul style="margin-left: 20px;">
+                            ${flat.specs.map(item => `<li style="margin-bottom: 5px;">${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <button class="btn btn-block" style="margin-top: 20px;" id="modalEnquireBtn">Enquire Now</button>
+                `;
+                
+                flatModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                
+                // Add event listener to modal button
+                document.getElementById('modalEnquireBtn').addEventListener('click', () => {
+                    flatModal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                    setTimeout(() => {
+                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                    }, 300);
+                });
+            });
+        });
+        
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            flatModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close modal when clicking outside
+        flatModal.addEventListener('click', (e) => {
+            if (e.target === flatModal) {
+                flatModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // ========== FORM VALIDATION ==========
+        const forms = document.querySelectorAll('form');
+        
+        forms.forEach(form => {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Basic validation
+                let isValid = true;
+                const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+                
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        isValid = false;
+                        input.style.borderColor = 'red';
+                    } else {
+                        input.style.borderColor = '#ddd';
+                    }
+                    
+                    // Phone validation
+                    if (input.type === 'tel' && !/^\d{10}$/.test(input.value.trim())) {
+                        isValid = false;
+                        input.style.borderColor = 'red';
+                        alert('Please enter a valid 10-digit phone number');
+                    }
+                    
+                    // Email validation
+                    if (input.type === 'email' && input.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim())) {
+                        isValid = false;
+                        input.style.borderColor = 'red';
+                        alert('Please enter a valid email address');
+                    }
+                });
+                
+                if (isValid) {
+                    // Form submission would go here
+                    alert('Thank you for your enquiry! Our team will contact you shortly.');
+                    form.reset();
+                }
+            });
+        });
+        
+        // ========== BACK TO TOP BUTTON ==========
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // ========== ANIMATIONS ON SCROLL ==========
+        const animateElements = document.querySelectorAll('.animate');
+        
+        const animateOnScroll = () => {
+            animateElements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Initialize animations
+        window.addEventListener('load', () => {
+            animateElements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+            
+            animateOnScroll();
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
